@@ -18,7 +18,7 @@ spec:
       env: dev
       id: C0910891
       stack: wordpress
-  replicas: 3
+  replicas: 1
   template:
     metadata:
       labels:
