@@ -29,8 +29,11 @@ spec:
     spec:
       containers:
       - name: wp-database
-        image: mariadb:10.6.4-focal
+        image: mariadb:latest
         imagePullPolicy: Always
+        env:
+        - name: MARIADB_ROOT_PASSWORD
+          value: "mypassword"
         ports:
         - containerPort: 3306
         volumeMounts:
